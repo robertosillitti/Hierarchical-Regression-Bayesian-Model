@@ -26,7 +26,7 @@ library(tidyr)
 ```
 
 ```{r, include=FALSE}
-Data <- read.xlsx("/Users/robertosillitti/Desktop/merged_dataset.xlsx")
+Data <- read.xlsx("/Users/robertosillitti/Desktop/Bayesian_Dataset.xlsx")
 ```
 
 ```{r, include=FALSE}
