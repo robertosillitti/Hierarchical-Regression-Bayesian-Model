@@ -37,7 +37,7 @@ This project workflow include:
 3. Implementation of the Gibbs Sampling algorithm
 4. Convergence diagnostics and interpretation of the results with posterior predictive checks
 
-To estimate the model parameters, I implemented a Gibbs sampling algorithm, a Markov Chain Monte Carlo (MCMC) algorithm that iteratively samples from the full conditional distributions of each parameter. It is particularly suitable in Bayesian settings, where closed-form solutions are often unavailable.
+To estimate the model parameters, I implemented a **Gibbs sampling algorithm**, a Markov Chain Monte Carlo (MCMC) algorithm that iteratively samples from the full conditional distributions of each parameter. It is particularly suitable in Bayesian settings, where closed-form solutions are often unavailable.
 
 ---
 
