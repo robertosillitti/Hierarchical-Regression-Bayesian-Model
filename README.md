@@ -6,7 +6,7 @@ The dataset contains information on the **30-day post-operative complication rat
 
 - **Observations:** 336 hospitals and accredited private clinics  
 - **Geographic scope:** Italian regions (except Aosta Valley and Molise)   
-- **Source:** [PNE – National Outcomes Program](https://pne.agenas.it/)  
+- **Source:** [PNE – National Outcomes Program](https://pne.agenas.it/). You can simply download the data for all relevant variables from the PNE website and use as statistical units only those healthcare facilities that appear for all variables.
 
 ### Covariates included in the model
 | Covariate                        | Description                                                                 |
@@ -32,7 +32,7 @@ The Bayesian approach can provide more stable and informative estimates than fre
 ## Methodology
 This project workflow include:
 
-1. Data cleaning and selection of relevant predictors
+1. Selection of relevant predictors
 2. Model specification 
 3. Implementation of the Gibbs Sampling algorithm
 4. Convergence diagnostics and interpretation of the results with posterior predictive checks
@@ -40,6 +40,11 @@ This project workflow include:
 To estimate the model parameters, I implemented a **Gibbs sampling algorithm**, a Markov Chain Monte Carlo (MCMC) algorithm that iteratively samples from the full conditional distributions of each parameter. It is particularly suitable in Bayesian settings, where closed-form solutions are often unavailable.
 
 ---
+### Repository Structure
+In this repository you will find:
+- R scripts containing all the necessary code to specify the model, implement the Gibbs Sampler, and generate plots and tables. Each script includes comments and interpretation of the results (mostly based on the graphical output, see the PDF for details).
+- PDF report with the most relevant code excerpts, data visualizations, plots, and a detailed discussion of the findings.
+- README file providing an overview of the entire project.
 
 ### Requirements
 Packages: `openxlsx`,`dplyr`,`coda`,`gridExtra`,`MASS`,`Matrix`,`knitr`,`ggplot2`,`bayesplot`,`tidyr`
