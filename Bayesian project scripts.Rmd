@@ -36,14 +36,14 @@ Data <- Data[-1,]
 ```{r, include=FALSE}
 Data <- Data %>%
   mutate(Healthcare_facility_category = case_when(
-    Tipo %in% c(
+    Type %in% c(
       "A.O. INTEGRATA CON L'UNIVERSITA'",
       "ISTITUTO DI RICOVERO E CURA A CARATTERE SCIENTIFICO - FONDAZIONE",
       "ISTITUTO DI RICOVERO E CURA A CARATTERE SCIENTIFICO - PRIVATO",
       "ISTITUTO DI RICOVERO E CURA A CARATTERE SCIENTIFICO - PUBBLICO"
     ) ~ "University hospital / IRCCS",
     
-    Tipo %in% c(
+    Type %in% c(
       "A.O. INTEGRATA CON IL S.S.N.",
       "AZIENDA OSPEDALIERA",
       "OSPEDALE A GESTIONE DIRETTA",
@@ -51,7 +51,7 @@ Data <- Data %>%
       "OSPEDALE CLASSIFICATO O ASSIMILATO AI SENSI DELL`ART.1, ULTIMO COMMA, DELLA LEGGE 132/1968"
     ) ~ "Pubblic",
     
-    Tipo %in% c(
+    Type %in% c(
       "CASA DI CURA PRIVATA - ACCREDITATA",
       "POLICLINICO UNIVERSITARIO PRIVATO"
     ) ~ "Private",
