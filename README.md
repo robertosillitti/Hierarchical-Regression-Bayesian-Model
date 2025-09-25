@@ -40,13 +40,13 @@ This project workflow include:
 To estimate the model parameters, I implemented a **Gibbs sampling algorithm**, a Markov Chain Monte Carlo (MCMC) algorithm that iteratively samples from the full conditional distributions of each parameter. It is particularly suitable in Bayesian settings, where closed-form solutions are often unavailable.
 
 ---
-### Repository Structure
+## Repository Structure
 In this repository you will find:
 - R scripts containing all the necessary code to specify the model, implement the Gibbs Sampler, and generate plots and tables. Each script includes comments and interpretation of the results (mostly based on the graphical output, see the PDF for details).
 - PDF report with the most relevant code excerpts, data visualizations, plots, and a detailed discussion of the findings.
 - README file providing an overview of the entire project.
 
-### Requirements
+## Requirements
 Packages: `openxlsx`,`dplyr`,`coda`,`gridExtra`,`MASS`,`Matrix`,`knitr`,`ggplot2`,`bayesplot`,`tidyr`
 
 
