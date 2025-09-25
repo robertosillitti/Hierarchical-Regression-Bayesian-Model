@@ -30,7 +30,7 @@ Data <- read.xlsx("/Users/robertosillitti/Desktop/merged_dataset.xlsx")
 ```
 
 ```{r, include=FALSE}
-Data <- Data[-1,] #since duplicated
+Data <- Data[-1,] 
 ```
 
 ```{r, include=FALSE}
