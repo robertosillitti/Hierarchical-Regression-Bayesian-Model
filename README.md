@@ -2,11 +2,11 @@
 This project investigates the factors that may influence the rate of post-operative complications following cholecystectomy procedures in Italian healthcare facilities. I applied a Bayesian hierarchical regression model to assess the impact of hospital characteristics and regional differences on surgical outcomes.
 
 ## Dataset Description
-The dataset contains information on the **30-day post-operative complication rate** for cholecystectomy procedures performed in various healthcare facilities across Italy.  
+The dataset contains information on the 30-day post-operative complication rate for cholecystectomy procedures performed in various healthcare facilities across Italy.  
 
 - **Observations:** 336 hospitals and accredited private clinics  
 - **Geographic scope:** Italian regions (except Aosta Valley and Molise)   
-- **Source:** [PNE – National Outcomes Program](https://pne.agenas.it/). You can simply download the data for all relevant variables from the PNE website and use as statistical units only those healthcare facilities that appear for all variables.
+- **Source:** [PNE – National Outcomes Program](https://pne.agenas.it/). You can simply download the data for all relevant covariates from the PNE website and use as statistical units only those healthcare facilities that appear for all covariates.
 
 ### Covariates included in the model
 | Covariate                        | Description                                                                 |
@@ -35,7 +35,8 @@ This project workflow include:
 1. Selection of relevant predictors
 2. Model specification 
 3. Implementation of the Gibbs Sampling algorithm
-4. Convergence diagnostics and interpretation of the results with posterior predictive checks
+4. Convergence diagnostics
+5. Interpretation of the results with posterior predictive checks
 
 To estimate the model parameters, I implemented a **Gibbs sampling algorithm**, a Markov Chain Monte Carlo (MCMC) algorithm that iteratively samples from the full conditional distributions of each parameter. It is particularly suitable in Bayesian settings, where closed-form solutions are often unavailable.
 
