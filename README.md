@@ -33,10 +33,11 @@ The Bayesian approach can provide more stable and informative estimates than fre
 This project workflow include:
 
 1. Selection of relevant predictors
-2. Model specification 
-3. Implementation of the Gibbs Sampling algorithm
-4. Convergence diagnostics
-5. Interpretation of the results with posterior predictive checks
+2. Model specification
+3. Prior specification, full conditional distributions and joint posterior formulation
+4. Implementation of the Gibbs Sampling algorithm
+5. Convergence diagnostics (traceplots, autocorrelation, ESS, Geweke test)
+6. Posterior inference and interpretation of the results with posterior predictive checks 
 
 To estimate the model parameters, I implemented a **Gibbs sampling algorithm**, a Markov Chain Monte Carlo (MCMC) algorithm that iteratively samples from the full conditional distributions of each parameter. It is particularly suitable in Bayesian settings, where closed-form solutions are often unavailable.
 
