@@ -4,9 +4,9 @@ This project investigates the factors that may influence the rate of post-operat
 ## Dataset Description
 The dataset contains information on the 30-day post-operative complication rate for cholecystectomy procedures performed in various healthcare facilities across Italy.  
 
-- **Observations:** 336 hospitals and accredited private clinics  
-- **Geographic scope:** Italian regions (except Aosta Valley and Molise)   
-- **Source:** [PNE – National Outcomes Program](https://pne.agenas.it/). You can simply download the data for all relevant covariates from the PNE website and use as statistical units only those healthcare facilities that appear for all covariates.
+- **Observations:** 336 hospitals and accredited private clinics;
+- **Geographic scope:** Italian regions (except Aosta Valley and Molise);
+- **Source:** [PNE – National Outcomes Program](https://pne.agenas.it/).
 
 ### Covariates included in the model
 | Covariate                        | Description                                                                 |
